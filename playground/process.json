@@ -1,0 +1,7 @@
+{ main:
+
+	{ step1: "value1",
+	  step2: "value2",
+	  step3: "value3"
+	}
+}
