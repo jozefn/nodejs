@@ -1,0 +1,30 @@
+<html>
+<body>
+
+
+<div id="msg"></div>
+
+<input type="button" value="Set Name to Jim" onclick="user.setUser('Jim')"><BR><BR>
+<input type="button" value="Set Name to Joseph" onclick="user.setUser()">
+
+<script>
+
+var user = {
+	"name":"joseph",
+	"saveName":"joseph",
+	setUser (){
+	    var d = document.getElementById('msg');
+	   	var args = Array.prototype.slice.call(arguments);
+	   	if (args[0]){
+			user.name = args[0];
+		} else {
+			user.name = user.saveName;
+		}
+	    d.innerHTML = "In Div My name is " + user.name;
+	}
+
+}
+</script>
+
+</body>
+</html>
